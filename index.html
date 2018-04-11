@@ -4,24 +4,33 @@
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
 	<style>
-		/*Combinadores - selecciona los elementos que son hermanos de uno*/
-		/*una etiqueta hermana es la que existe en el mismo nivel, o que tienen un padre en comun y que estan a continuacion de la referencia*/
-		h2~p {
-			color: green;
-		}
+		/*Pseudo-Clases*/
+		/*Pintar de rojo el segundo elemento*/
+		li:nth-child(2) { color: red; }
+		/*Pintar de azul todos los elemntos impares*/
+		li:nth-child(odd) { color: blue; }
+		/*Pintar de verde todos los elementos a partir del 4*/
+		li:nth-child(n+4) { color: green; }
+		/*Pintar de cafe cada 3 elementos*/
+		li:nth-child(3n) { color: brown; }
+		/*Pintar de Navy cada 2 elementos a partir del 5*/
+		li:nth-child(2n+5) { color: #000080; }
 	</style>
 </head>
 <body>
 	
-	<div id="uno">
-		<p>Este parrafo no se va ver afectado</p>
-		<h2>Esto es el test</h2>
-		<p>Este parrafo es germano de h2</p>
-		<p>A este parrafo tambien le afecta porque esta a continuacion de la referencia</p>
-	</div>
-	<div id="dos">
-		<p>Este otro parrafo tampoco es hermano de h2</p>
-	</div>
+	<ul>
+		<li>Adriano</li>
+		<li>Jose</li>
+		<li>Pablo</li>
+		<li>Pedro</li>
+		<li>Raul</li>
+		<li>Leny</li>
+		<li>Camila</li>
+		<li>Ana</li>
+		<li>Paula</li>
+		<li>Maria</li>
+	</ul>
 
 </body>
 </html>
