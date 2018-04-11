@@ -5,16 +5,16 @@
 	<title>CSS3 Avanzado</title>
 	<style>
 		/*Pseudo-Clases*/
-		/*Pintar de rojo el segundo elemento*/
-		li:nth-child(2) { color: red; }
-		/*Pintar de azul todos los elemntos impares*/
-		li:nth-child(odd) { color: blue; }
-		/*Pintar de verde todos los elementos a partir del 4*/
-		li:nth-child(n+4) { color: green; }
-		/*Pintar de cafe cada 3 elementos*/
-		li:nth-child(3n) { color: brown; }
-		/*Pintar de Navy cada 2 elementos a partir del 5*/
-		li:nth-child(2n+5) { color: #000080; }
+		/*Pintar de rojo cada 2 elementos a partir del 5, contanto desde el ultimo elemento*/
+		li:nth-last-child(2n+5) { color: red; }
+		/*Pinta el ultimo elemento de azul*/
+		li:last-child { color: blue; }
+		
+		/*Selecciona elemento input que tenga el atributo de tipo radio y este checked*/
+		input[type="radio"]:checked { width: 30px; height: 30px; }
+
+		/*Selecciona todos p que no tengan la clase "leads"*/
+		p:not([class="leads"]) { color: red; }
 	</style>
 </head>
 <body>
@@ -31,6 +31,14 @@
 		<li>Paula</li>
 		<li>Maria</li>
 	</ul>
+	<input type="checkbox" checked>SI
+	<input type="checkbox">NO
+
+	<input type="radio" checked>Hombre
+	<input type="radio">Mujer
+
+	<p class="leads">Parrafo 1</p>
+	<p class="leader">Parrafo 2</p>
 
 </body>
 </html>
