@@ -4,23 +4,24 @@
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
 	<style>
-		/*selector de atributo que termina con el valor*/
-		a[title$="titulo"] {
-			color: #ea1d1d;
-		}
-		/*selector de atributo que empieza con el valor*/
-		a[title^="ejemplos"] {
+		/*Combinadores - selecciona los elementos que son hermanos de uno*/
+		/*una etiqueta hermana es la que existe en el mismo nivel, o que tienen un padre en comun y que estan a continuacion de la referencia*/
+		h2~p {
 			color: green;
-		}
-		/*selector de atributo que contenga el valor*/
-		a[title*="selector"] {
-			color: brown;
 		}
 	</style>
 </head>
 <body>
 	
-	<p>Lorem ipsum  <a href="#" title="ejemplo de titulo">dolor sit amet</a>, consectetur adipisicing elit. Praesentium cupiditate voluptatem officia magnam! Amet <a href="#" title="ejemplos prueba">assumenda</a> aliquid molestiae harum, expedita quae quod eius, laborum minima quis aut officia dolor nobis ipsum modi. Tempore error maxime voluptates molestiae, quidem numquam, praesentium dolores, <a href="#" title="ejemplo de selector de atributo">veniam</a> vero velit nam corrupti incidunt, tempora iure ad odit voluptatibus eligendi hic. Ullam expedita, porro quo amet temporibus cum.</p>
+	<div id="uno">
+		<p>Este parrafo no se va ver afectado</p>
+		<h2>Esto es el test</h2>
+		<p>Este parrafo es germano de h2</p>
+		<p>A este parrafo tambien le afecta porque esta a continuacion de la referencia</p>
+	</div>
+	<div id="dos">
+		<p>Este otro parrafo tampoco es hermano de h2</p>
+	</div>
 
 </body>
 </html>
