@@ -4,41 +4,31 @@
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
 	<style>
-		/*Pseudo-Clases*/
-		/*Pintar de rojo cada 2 elementos a partir del 5, contanto desde el ultimo elemento*/
-		li:nth-last-child(2n+5) { color: red; }
-		/*Pinta el ultimo elemento de azul*/
-		li:last-child { color: blue; }
-		
-		/*Selecciona elemento input que tenga el atributo de tipo radio y este checked*/
-		input[type="radio"]:checked { width: 30px; height: 30px; }
-
-		/*Selecciona todos p que no tengan la clase "leads"*/
-		p:not([class="leads"]) { color: red; }
+		/*Selecciona la primera fila del parrafo*/
+		p:first-line {
+			color: red;
+		}
+		/*Selecciona la primera letra del parrafo*/
+		p:first-letter {
+			font-size: 35px;
+		}
+		/*Pinta de Forestgreen el texto seleccionado dentro el input*/
+		input::selection {
+			background-color: forestgreen;
+		}
 	</style>
 </head>
 <body>
 	
-	<ul>
-		<li>Adriano</li>
-		<li>Jose</li>
-		<li>Pablo</li>
-		<li>Pedro</li>
-		<li>Raul</li>
-		<li>Leny</li>
-		<li>Camila</li>
-		<li>Ana</li>
-		<li>Paula</li>
-		<li>Maria</li>
-	</ul>
-	<input type="checkbox" checked>SI
-	<input type="checkbox">NO
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet asperiores nihil rem sequi voluptates nobis! Expedita veniam quasi animi corporis porro, cum voluptates magnam aut cumque beatae placeat delectus accusantium.</p>
 
-	<input type="radio" checked>Hombre
-	<input type="radio">Mujer
-
-	<p class="leads">Parrafo 1</p>
-	<p class="leader">Parrafo 2</p>
+	<form action="">
+		Nombre:
+		<input type="text" id="nombre">
+		Apellido:
+		<input type="text" id="apellido">
+		 <input type="submit" value="Enviar">	
+	</form>
 
 </body>
 </html>
