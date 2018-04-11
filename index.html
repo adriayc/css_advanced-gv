@@ -4,24 +4,23 @@
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
 	<style>
-		/*a {
-			text-decoration: none;
-		}*/
-		.enlace {
-			text-decoration: none;
+		/*selector de atributo que termina con el valor*/
+		a[title$="titulo"] {
+			color: #ea1d1d;
 		}
-		#enlace1 {
-			color: blue;
+		/*selector de atributo que empieza con el valor*/
+		a[title^="ejemplos"] {
+			color: green;
 		}
-		#enlace2 {
+		/*selector de atributo que contenga el valor*/
+		a[title*="selector"] {
 			color: brown;
 		}
 	</style>
 </head>
 <body>
 	
-	<a href="#" class="enlace" id="enlace1">Esto es un enlace</a> <br>
-	<a href="#" class="enlace" id="enlace2">Esto es un enlace 2</a>
+	<p>Lorem ipsum  <a href="#" title="ejemplo de titulo">dolor sit amet</a>, consectetur adipisicing elit. Praesentium cupiditate voluptatem officia magnam! Amet <a href="#" title="ejemplos prueba">assumenda</a> aliquid molestiae harum, expedita quae quod eius, laborum minima quis aut officia dolor nobis ipsum modi. Tempore error maxime voluptates molestiae, quidem numquam, praesentium dolores, <a href="#" title="ejemplo de selector de atributo">veniam</a> vero velit nam corrupti incidunt, tempora iure ad odit voluptatibus eligendi hic. Ullam expedita, porro quo amet temporibus cum.</p>
 
 </body>
 </html>
