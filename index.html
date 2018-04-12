@@ -4,20 +4,26 @@
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
 	<style>
+		
 		/*
-		rgba(red,green,blue,alpha)
-			alpha: 0-1 (donde 0 es totalmente transparente y 1 color solido)
+		hsl(hue, saturation, light, alpha) - tono, saturacion, luz y alpha
+			alpha - 0-100% (donde 0% es totalmente transparente y 100% es solido )
 		*/
-
-		p {
-			color: rgba(20,141,67,0.2);
-		}
+		.ejemplo1 { background: hsl(320,100%,10%); }
+		.ejemplo2 { background: hsl(320,80%,30%); }
+		.ejemplo3 { background: hsla(320,60%,50%,7%); }
+		.ejemplo4 { background: hsl(320,30%,70%); }
+		.ejemplo5 { background: hsl(320,20%,90%); }
 
 	</style>
 </head>
 <body>
 	
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore veniam, alias porro aspernatur neque repellendus laudantium hic nesciunt voluptatibus quisquam eum sint fugit soluta voluptate reprehenderit vitae! Alias ut modi reiciendis optio doloribus. Facilis quidem, repudiandae non libero reprehenderit ea ad, laboriosam assumenda pariatur maxime deserunt ex perferendis possimus illum molestiae, quos soluta harum tempore velit hic. Alias, cumque.</p>
+	<p class="ejemplo1">Lorem ipsum dolor sit amet.</p>
+	<p class="ejemplo2">Lorem ipsum dolor sit amet.</p>
+	<p class="ejemplo3">Lorem ipsum dolor sit amet.</p>
+	<p class="ejemplo4">Lorem ipsum dolor sit amet.</p>
+	<p class="ejemplo5">Lorem ipsum dolor sit amet.</p>
 
 </body>
 </html>
