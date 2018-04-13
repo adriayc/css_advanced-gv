@@ -4,26 +4,29 @@
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
 	<style>
-		
+
 		/*
-		hsl(hue, saturation, light, alpha) - tono, saturacion, luz y alpha
-			alpha - 0-100% (donde 0% es totalmente transparente y 100% es solido )
+		Opacity - Ajusta el nivel de opacidad de un elemento
+			0-1 (donde 0 es totalmente transparente y 1 por defecto)
 		*/
-		.ejemplo1 { background: hsl(320,100%,10%); }
-		.ejemplo2 { background: hsl(320,80%,30%); }
-		.ejemplo3 { background: hsla(320,60%,50%,7%); }
-		.ejemplo4 { background: hsl(320,30%,70%); }
-		.ejemplo5 { background: hsl(320,20%,90%); }
+
+		.image { width: 200px; }
+		
+		.image1 { opacity: 0.2; }
+		.image2 { opacity: 0.4; }
+		.image3 { opacity: 0.6; }
+		.image4 { opacity: 0.8; }
+		.image5 { opacity: 1; }
 
 	</style>
 </head>
 <body>
 	
-	<p class="ejemplo1">Lorem ipsum dolor sit amet.</p>
-	<p class="ejemplo2">Lorem ipsum dolor sit amet.</p>
-	<p class="ejemplo3">Lorem ipsum dolor sit amet.</p>
-	<p class="ejemplo4">Lorem ipsum dolor sit amet.</p>
-	<p class="ejemplo5">Lorem ipsum dolor sit amet.</p>
+	<img class="image image1" src="img/goku.jpg" alt="Goku">
+	<img class="image image2" src="img/goku.jpg" alt="Goku">
+	<img class="image image3" src="img/goku.jpg" alt="Goku">
+	<img class="image image4" src="img/goku.jpg" alt="Goku">
+	<img class="image image5" src="img/goku.jpg" alt="Goku">
 
 </body>
 </html>
