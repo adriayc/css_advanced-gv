@@ -4,29 +4,29 @@
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
 	<style>
-
-		/*
-		Opacity - Ajusta el nivel de opacidad de un elemento
-			0-1 (donde 0 es totalmente transparente y 1 por defecto)
-		*/
-
-		.image { width: 200px; }
 		
-		.image1 { opacity: 0.2; }
-		.image2 { opacity: 0.4; }
-		.image3 { opacity: 0.6; }
-		.image4 { opacity: 0.8; }
-		.image5 { opacity: 1; }
+		.image {
+			width: 250px;
+			display: block;
+			margin: auto;
+		}
+		.border {
+			/*border-radius: 15px;*/
+			/*border-radius: 5px 10px 5px 10px;*/
+
+			border-radius: 10px / 80px;
+			/*Es su equivalente*/
+			/*border-top-left-radius: 10px 80px;
+			border-top-right-radius: 10px 80px;
+			border-bottom-left-radius: 10px 80px;
+			border-bottom-right-radius: 10px 80px;*/
+		}
 
 	</style>
 </head>
 <body>
 	
-	<img class="image image1" src="img/goku.jpg" alt="Goku">
-	<img class="image image2" src="img/goku.jpg" alt="Goku">
-	<img class="image image3" src="img/goku.jpg" alt="Goku">
-	<img class="image image4" src="img/goku.jpg" alt="Goku">
-	<img class="image image5" src="img/goku.jpg" alt="Goku">
+	<img class="image border" src="img/goku.jpg" alt="Goku">
 
 </body>
 </html>
