@@ -3,55 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
+	<!-- Option 1 -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> -->
 	<style>
+		
+		/*Option 2*/
+		@font-face {
+			font-family: poppis-regular;
+			src: url('font/Poppins-Regular.ttf');
+		}
+
+		body {
+			/*Option 1*/
+			/*font-family: 'Poppins', sans-serif;*/
+			/*Option 2*/
+			font-family: poppis-regular, sans-serif;
+		}
 	
-		/*
-		MULTIPLES COLUMNAS DE TEXTO:
-			column-count - Especifica el numero de columnas e las que se debe dividir un elemento.
-			column-gap - Especifica el espacio entre las columnas.
-			column-rule-style - Especifica el estilo de la regla entre columnas.
-			column-rule-width - Especifica el ancho de la regla entre columnas.
-			column-rule-color - Especifica el color de la regla entre columnas.
-			column-rule - Propiedad que permite establecer todas las propiedades de reglas de columnas.
-			column-span - Especifica cuantas columnas debe abarcar un elemento.
-			column-width - Especifica un ancho optimo sugerido para las columnas.
-		*/
-		#columns {
-			text-align: justify;
-
-			-webkit-column-count: 3;
-			-moz-column-count: 3;
-
-			column-count: 3;
-
-			column-gap: 45px;
-
-			column-width: 200px;
-
-			/*column-rule-style: solid;
-			column-rule-width: 1px;
-			column-rule-color: #ff0000;*/
-			column-rule: solid 1px #ff0000;
-		}
-		.title {
-			column-span: all;
-		}
 
 	</style>
 </head>
 <body>
 	
-	<h2 class="title">CSS Multiple Columns</h2>
-	<p id="columns">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, eum. Aliquid amet blanditiis cum vero, voluptates eveniet officiis error ipsa ea. Enim corporis deserunt quidem cum. Non et porro doloremque consequatur deleniti ab nostrum distinctio, animi velit ducimus. Non ab corporis numquam aut, et placeat, dolore recusandae molestias nisi autem?
+	<h2>The @font-face Rule</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus beatae, explicabo quibusdam incidunt dolore veritatis illo provident, blanditiis accusantium non cum! Ipsa sequi, amet qui quam id debitis, optio delectus necessitatibus a in commodi! Repellendus numquam saepe tempora quae vel quod dolore atque aut. Nulla vitae mollitia, natus maxime debitis.
 
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, eum. Aliquid amet blanditiis cum vero, voluptates eveniet officiis error ipsa ea. Enim corporis deserunt quidem cum. Non et porro doloremque consequatur deleniti ab nostrum distinctio, animi velit ducimus. Non ab corporis numquam aut, et placeat, dolore recusandae molestias nisi autem?
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus beatae, explicabo quibusdam incidunt dolore veritatis illo provident, blanditiis accusantium non cum! Ipsa sequi, amet qui quam id debitis, optio delectus necessitatibus a in commodi! Repellendus numquam saepe tempora quae vel quod dolore atque aut. Nulla vitae mollitia, natus maxime debitis.
 
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, eum. Aliquid amet blanditiis cum vero, voluptates eveniet officiis error ipsa ea. Enim corporis deserunt quidem cum. Non et porro doloremque consequatur deleniti ab nostrum distinctio, animi velit ducimus. Non ab corporis numquam aut, et placeat, dolore recusandae molestias nisi autem?
-
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, eum. Aliquid amet blanditiis cum vero, voluptates eveniet officiis error ipsa ea. Enim corporis deserunt quidem cum. Non et porro doloremque consequatur deleniti ab nostrum distinctio, animi velit ducimus. Non ab corporis numquam aut, et placeat, dolore recusandae molestias nisi autem?
-
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, eum. Aliquid amet blanditiis cum vero, voluptates eveniet officiis error ipsa ea. Enim corporis deserunt quidem cum. Non et porro doloremque consequatur deleniti ab nostrum distinctio, animi velit ducimus. Non ab corporis numquam aut, et placeat, dolore recusandae molestias nisi autem?
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus beatae, explicabo quibusdam incidunt dolore veritatis illo provident, blanditiis accusantium non cum! Ipsa sequi, amet qui quam id debitis, optio delectus necessitatibus a in commodi! Repellendus numquam saepe tempora quae vel quod dolore atque aut. Nulla vitae mollitia, natus maxime debitis.
 	</p>
 
 </body>
