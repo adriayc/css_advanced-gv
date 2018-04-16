@@ -1,0 +1,9 @@
+body {
+	background: #DEB887;
+	font-size: 14px;
+}
+
+p {
+	column-count: unset;
+	text-align: justify;
+}

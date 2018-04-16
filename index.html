@@ -3,35 +3,73 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
-	<!-- Option 1 -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> -->
-	<style>
+	<link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/screen-l.css">
+	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1023px)" href="css/screen-m.css">
+	<link rel="stylesheet" media="screen and (min-width: 640px) and (max-width: 767px)" href="css/screen-s.css">
+	<link rel="stylesheet" media="screen and (max-width: 638px)" href="css/screen-xs.css">
+
+	<!-- <style>
 		
-		/*Option 2*/
-		@font-face {
-			font-family: poppis-regular;
-			src: url('font/Poppins-Regular.ttf');
+		p {
+			text-align: justify;
 		}
 
-		body {
-			/*Option 1*/
-			/*font-family: 'Poppins', sans-serif;*/
-			/*Option 2*/
-			font-family: poppis-regular, sans-serif;
-		}
-	
+		@media screen and (min-width: 1024px) {
+			body {
+				background: #F0FFFF;
+				font-size: 20px;
+			}
 
-	</style>
+			p {
+				column-count: 4;
+				text-align: justify;
+			}
+		}
+
+		@media screen and (max-width: 1023px) and (min-width: 768px) {
+			body {
+				background: #F5F5DC;
+				font-size: 18px;
+			}
+
+			p {
+				column-count: 3;
+			}
+		}
+
+		@media screen and (max-width: 763px) and (min-width: 640px) {
+			body {
+				background: #FFE4C4;
+				font-size: 16px;
+			}
+
+			p {
+				column-count: 2;
+			}
+		}
+
+		@media screen and (max-width: 639px) {
+			body {
+				background: #DEB887;
+				font-size: 14px;
+			}
+
+			p {
+				column-count: unset;
+			}
+		}
+
+	</style> -->
 </head>
 <body>
 	
-	<h2>The @font-face Rule</h2>
+	<h2>CSS Media Queries</h2>
 	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus beatae, explicabo quibusdam incidunt dolore veritatis illo provident, blanditiis accusantium non cum! Ipsa sequi, amet qui quam id debitis, optio delectus necessitatibus a in commodi! Repellendus numquam saepe tempora quae vel quod dolore atque aut. Nulla vitae mollitia, natus maxime debitis.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam libero soluta, perspiciatis, impedit nihil excepturi ullam ut! Quia ducimus, ut. Numquam voluptate itaque necessitatibus, aperiam nemo optio quidem. Rem asperiores aperiam, nihil similique eveniet voluptatum, sunt cumque officiis fugit est quam. Molestiae voluptatum deleniti tempora corporis eius debitis commodi a.
 
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus beatae, explicabo quibusdam incidunt dolore veritatis illo provident, blanditiis accusantium non cum! Ipsa sequi, amet qui quam id debitis, optio delectus necessitatibus a in commodi! Repellendus numquam saepe tempora quae vel quod dolore atque aut. Nulla vitae mollitia, natus maxime debitis.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam libero soluta, perspiciatis, impedit nihil excepturi ullam ut! Quia ducimus, ut. Numquam voluptate itaque necessitatibus, aperiam nemo optio quidem. Rem asperiores aperiam, nihil similique eveniet voluptatum, sunt cumque officiis fugit est quam. Molestiae voluptatum deleniti tempora corporis eius debitis commodi a.
 
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus beatae, explicabo quibusdam incidunt dolore veritatis illo provident, blanditiis accusantium non cum! Ipsa sequi, amet qui quam id debitis, optio delectus necessitatibus a in commodi! Repellendus numquam saepe tempora quae vel quod dolore atque aut. Nulla vitae mollitia, natus maxime debitis.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam libero soluta, perspiciatis, impedit nihil excepturi ullam ut! Quia ducimus, ut. Numquam voluptate itaque necessitatibus, aperiam nemo optio quidem. Rem asperiores aperiam, nihil similique eveniet voluptatum, sunt cumque officiis fugit est quam. Molestiae voluptatum deleniti tempora corporis eius debitis commodi a.
 	</p>
 
 </body>
