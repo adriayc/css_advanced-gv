@@ -4,44 +4,55 @@
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
 	<style>
+	
 		/*
-		IMAGEN COMO EL BORDE DE UN ELEMENTO:
-			border-image: source slice width outside repeat|initial|inherit;
-				source - El camino a la imagen que se utilizara como borde.
-				slice - Como cortar la imagen del borde.
-				width - El ancho de la imagen del borde.
-				outset - La cantidad en que el area de la imagen del borde se extiende mas alla del recuadro de borde.
-				repeat - Si la imagen del borde debe repetirse, redondearse o estirarse.
-				initial - Establece esta propiedad a su valor predeterminado.
-				inerit - Hereda esta propiedad de su elemento principal.
+		MULTIPLES COLUMNAS DE TEXTO:
+			column-count - Especifica el numero de columnas e las que se debe dividir un elemento.
+			column-gap - Especifica el espacio entre las columnas.
+			column-rule-style - Especifica el estilo de la regla entre columnas.
+			column-rule-width - Especifica el ancho de la regla entre columnas.
+			column-rule-color - Especifica el color de la regla entre columnas.
+			column-rule - Propiedad que permite establecer todas las propiedades de reglas de columnas.
+			column-span - Especifica cuantas columnas debe abarcar un elemento.
+			column-width - Especifica un ancho optimo sugerido para las columnas.
 		*/
-		.borde {
-			border: 10px solid transparent;
-			padding: 15px;
-			margin-bottom: 10px;
+		#columns {
+			text-align: justify;
+
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+
+			column-count: 3;
+
+			column-gap: 45px;
+
+			column-width: 200px;
+
+			/*column-rule-style: solid;
+			column-rule-width: 1px;
+			column-rule-color: #ff0000;*/
+			column-rule: solid 1px #ff0000;
 		}
-		#border-image1 {
-			border-image-source: url('img/border.png');
-			border-image-slice: 30;
-			border-image-width: 10px;
-			/*border-image-outset: 10px;*/
-			border-image-repeat: round;
-			/*border-image: url('img/border.png') 30 round;*/
-		}
-		#border-image2 {
-			border-image: url('img/border.png') 30 stretch;
+		.title {
+			column-span: all;
 		}
 
 	</style>
 </head>
 <body>
 	
-	<div id="border-image1" class="borde">
-		Este es un ejemplo con el borde entrelazado.
-	</div>
-	<div id="border-image2" class="borde">
-		Este es un ejemplo con el borde estrecho.
-	</div>
+	<h2 class="title">CSS Multiple Columns</h2>
+	<p id="columns">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, eum. Aliquid amet blanditiis cum vero, voluptates eveniet officiis error ipsa ea. Enim corporis deserunt quidem cum. Non et porro doloremque consequatur deleniti ab nostrum distinctio, animi velit ducimus. Non ab corporis numquam aut, et placeat, dolore recusandae molestias nisi autem?
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, eum. Aliquid amet blanditiis cum vero, voluptates eveniet officiis error ipsa ea. Enim corporis deserunt quidem cum. Non et porro doloremque consequatur deleniti ab nostrum distinctio, animi velit ducimus. Non ab corporis numquam aut, et placeat, dolore recusandae molestias nisi autem?
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, eum. Aliquid amet blanditiis cum vero, voluptates eveniet officiis error ipsa ea. Enim corporis deserunt quidem cum. Non et porro doloremque consequatur deleniti ab nostrum distinctio, animi velit ducimus. Non ab corporis numquam aut, et placeat, dolore recusandae molestias nisi autem?
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, eum. Aliquid amet blanditiis cum vero, voluptates eveniet officiis error ipsa ea. Enim corporis deserunt quidem cum. Non et porro doloremque consequatur deleniti ab nostrum distinctio, animi velit ducimus. Non ab corporis numquam aut, et placeat, dolore recusandae molestias nisi autem?
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, eum. Aliquid amet blanditiis cum vero, voluptates eveniet officiis error ipsa ea. Enim corporis deserunt quidem cum. Non et porro doloremque consequatur deleniti ab nostrum distinctio, animi velit ducimus. Non ab corporis numquam aut, et placeat, dolore recusandae molestias nisi autem?
+	</p>
 
 </body>
 </html>
