@@ -4,29 +4,44 @@
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
 	<style>
-		
-		.image {
-			width: 250px;
-			display: block;
-			margin: auto;
-		}
-		.border {
-			/*border-radius: 15px;*/
-			/*border-radius: 5px 10px 5px 10px;*/
 
-			border-radius: 10px / 80px;
-			/*Es su equivalente*/
-			/*border-top-left-radius: 10px 80px;
-			border-top-right-radius: 10px 80px;
-			border-bottom-left-radius: 10px 80px;
-			border-bottom-right-radius: 10px 80px;*/
+		/*
+		SOMBRA:
+			box-shodow: none|h-offset v-offset blur spread color inset|initial|inherit;
+				none - Valor por defecto.
+				h-offset - Requerido. Desplazamiento horizontal de la sombre.
+				v-offset - Requerido. Desplazamiento vertical de la sombre.
+				blur - Opcional. El radio de desenfoque.
+				spread - opcional. El radio de propagacion.
+				solor - Opcional. El color de la sombra.
+				inset - Opcional. Cambia la sombra de una sombra exterior a una sombra interior.
+				initial - Establece esta propiedad a su valor predeterminado.
+				inherit - Hereda esta propiedad de su elemento principal.
+		*/
+		#ejemplo {
+			width: 220px;
+			height: 220px;
+			background: #c2c2c2;
+			padding: 10px;
+			margin: 20px auto;
+
+			/*Sombras para contenedores*/
+			/*box-shadow: 5px 5px 10px #888;*/
+			/*box-shadow: 5px 5px 3px 3px #888;*/
+			/*box-shadow: 5px 5px 2px #888 inset;*/
+			box-shadow: 5px 5px 10px #888, -10px -10px 10px red;
+
+			/*Sombras para textos*/
+			text-shadow: 1px 1px 2px green;
 		}
 
 	</style>
 </head>
 <body>
 	
-	<img class="image border" src="img/goku.jpg" alt="Goku">
+	<div id="ejemplo">
+		Una caja de sombra como ejemplo.
+	</div>
 
 </body>
 </html>
