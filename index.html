@@ -3,74 +3,73 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
-	<link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/screen-l.css">
-	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1023px)" href="css/screen-m.css">
-	<link rel="stylesheet" media="screen and (min-width: 640px) and (max-width: 767px)" href="css/screen-s.css">
-	<link rel="stylesheet" media="screen and (max-width: 638px)" href="css/screen-xs.css">
-
-	<!-- <style>
+	<style>
 		
-		p {
-			text-align: justify;
+		a.btn {
+			text-decoration: none;
+			background: #f76c6c;
+			color: #fff;
+			display: inline-block;
+			padding: 5px 10px;
+			margin: 10px 0px;
+
+			/*
+				transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out;
+					ease - Especifica un efecto de transicion con un inicio lento, luego rapido y luego termina lentamente (por defecto)
+					linear - Especifica un efecto de transicion con la misma velocidad de principio a fin.
+					ease-in - Especifica un efecto de transicion con un inicio lento.
+					ease-out - Especifica un efencto de transicion con un final lento.
+					ease-in-out - Especifica un efecto de transion con un inicio y un final lento.
+			*/
+
+			/*transition-property: background;
+			transition-duration: 2s;
+			transition-timing-function: linear;
+			transition-delay: 1s;*/
+			transition: background 2s ease 1s;
+
+		}
+		a.btn:hover {
+			background: #d22828;
 		}
 
-		@media screen and (min-width: 1024px) {
-			body {
-				background: #F0FFFF;
-				font-size: 20px;
-			}
-
-			p {
-				column-count: 4;
-				text-align: justify;
-			}
+		.caja { 
+			width: 50px; 
+			height: 50px; 
+			background: red;
+			margin: 10px 0px;
+		}
+		.caja:hover {
+			width: 200px;
+		}
+		.ease {
+			transition: width 0.5s ease;
+		}
+		.linear {
+			transition: width 0.5s linear;
+		}
+		.ease-in {
+			transition: width 0.5s ease-in;
+		}
+		.ease-out {
+			transition: width 0.5s ease-out;
+		}
+		.ease-in-out {
+			transition: width 0.5s ease-in-out;
 		}
 
-		@media screen and (max-width: 1023px) and (min-width: 768px) {
-			body {
-				background: #F5F5DC;
-				font-size: 18px;
-			}
-
-			p {
-				column-count: 3;
-			}
-		}
-
-		@media screen and (max-width: 763px) and (min-width: 640px) {
-			body {
-				background: #FFE4C4;
-				font-size: 16px;
-			}
-
-			p {
-				column-count: 2;
-			}
-		}
-
-		@media screen and (max-width: 639px) {
-			body {
-				background: #DEB887;
-				font-size: 14px;
-			}
-
-			p {
-				column-count: unset;
-			}
-		}
-
-	</style> -->
+	</style>
 </head>
 <body>
 	
-	<h2>CSS Media Queries</h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam libero soluta, perspiciatis, impedit nihil excepturi ullam ut! Quia ducimus, ut. Numquam voluptate itaque necessitatibus, aperiam nemo optio quidem. Rem asperiores aperiam, nihil similique eveniet voluptatum, sunt cumque officiis fugit est quam. Molestiae voluptatum deleniti tempora corporis eius debitis commodi a.
+	<a href="#" class="btn">Boton con Transicion</a>
 
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam libero soluta, perspiciatis, impedit nihil excepturi ullam ut! Quia ducimus, ut. Numquam voluptate itaque necessitatibus, aperiam nemo optio quidem. Rem asperiores aperiam, nihil similique eveniet voluptatum, sunt cumque officiis fugit est quam. Molestiae voluptatum deleniti tempora corporis eius debitis commodi a.
+	<div class="caja ease"></div>
+	<div class="caja linear"></div>
+	<div class="caja ease-in"></div>
+	<div class="caja ease-out"></div>
+	<div class="caja ease-in-out"></div>
 
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam libero soluta, perspiciatis, impedit nihil excepturi ullam ut! Quia ducimus, ut. Numquam voluptate itaque necessitatibus, aperiam nemo optio quidem. Rem asperiores aperiam, nihil similique eveniet voluptatum, sunt cumque officiis fugit est quam. Molestiae voluptatum deleniti tempora corporis eius debitis commodi a.
-	</p>
 
 </body>
 </html>
