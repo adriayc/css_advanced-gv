@@ -5,42 +5,21 @@
 	<title>CSS3 Avanzado</title>
 	<style>
 
-		/*
-		SOMBRA:
-			box-shodow: none|h-offset v-offset blur spread color inset|initial|inherit;
-				none - Valor por defecto.
-				h-offset - Requerido. Desplazamiento horizontal de la sombre.
-				v-offset - Requerido. Desplazamiento vertical de la sombre.
-				blur - Opcional. El radio de desenfoque.
-				spread - opcional. El radio de propagacion.
-				solor - Opcional. El color de la sombra.
-				inset - Opcional. Cambia la sombra de una sombra exterior a una sombra interior.
-				initial - Establece esta propiedad a su valor predeterminado.
-				inherit - Hereda esta propiedad de su elemento principal.
-		*/
-		#ejemplo {
-			width: 220px;
-			height: 220px;
-			background: #c2c2c2;
-			padding: 10px;
-			margin: 20px auto;
-
-			/*Sombras para contenedores*/
-			/*box-shadow: 5px 5px 10px #888;*/
-			/*box-shadow: 5px 5px 3px 3px #888;*/
-			/*box-shadow: 5px 5px 2px #888 inset;*/
-			box-shadow: 5px 5px 10px #888, -10px -10px 10px red;
-
-			/*Sombras para textos*/
-			text-shadow: 1px 1px 2px green;
+		#fondo {
+			width: 2000px;
+			height: 2000px;
+			background-image: url('img/fondo1.png'), url('img/fondo2.png');
+			background-position: center bottom, center center;
+			background-repeat: repeat-y, repeat;
+			background-attachment: fixed;
 		}
 
 	</style>
 </head>
 <body>
 	
-	<div id="ejemplo">
-		Una caja de sombra como ejemplo.
+
+	<div id="fondo">
 	</div>
 
 </body>
