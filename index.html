@@ -4,22 +4,43 @@
 	<meta charset="UTF-8">
 	<title>CSS3 Avanzado</title>
 	<style>
-
-		#fondo {
-			width: 2000px;
-			height: 2000px;
-			background-image: url('img/fondo1.png'), url('img/fondo2.png');
-			background-position: center bottom, center center;
-			background-repeat: repeat-y, repeat;
-			background-attachment: fixed;
+		/*
+		IMAGEN COMO EL BORDE DE UN ELEMENTO:
+			border-image: source slice width outside repeat|initial|inherit;
+				source - El camino a la imagen que se utilizara como borde.
+				slice - Como cortar la imagen del borde.
+				width - El ancho de la imagen del borde.
+				outset - La cantidad en que el area de la imagen del borde se extiende mas alla del recuadro de borde.
+				repeat - Si la imagen del borde debe repetirse, redondearse o estirarse.
+				initial - Establece esta propiedad a su valor predeterminado.
+				inerit - Hereda esta propiedad de su elemento principal.
+		*/
+		.borde {
+			border: 10px solid transparent;
+			padding: 15px;
+			margin-bottom: 10px;
+		}
+		#border-image1 {
+			border-image-source: url('img/border.png');
+			border-image-slice: 30;
+			border-image-width: 10px;
+			/*border-image-outset: 10px;*/
+			border-image-repeat: round;
+			/*border-image: url('img/border.png') 30 round;*/
+		}
+		#border-image2 {
+			border-image: url('img/border.png') 30 stretch;
 		}
 
 	</style>
 </head>
 <body>
 	
-
-	<div id="fondo">
+	<div id="border-image1" class="borde">
+		Este es un ejemplo con el borde entrelazado.
+	</div>
+	<div id="border-image2" class="borde">
+		Este es un ejemplo con el borde estrecho.
 	</div>
 
 </body>
